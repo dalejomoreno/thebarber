@@ -1,2 +1,2 @@
-# thebarber
-The Barber
+# The Barber
+https://dalejomoreno.github.io/thebarber
