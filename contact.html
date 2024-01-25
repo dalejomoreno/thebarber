@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - The Barber</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <h1> <img src="./images/logo.png"> </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="nombreApellido">Name and Surname</label>
+            <input type="text" id="nombreApellido" class="input-padron" required placeholder="Your Name">
+
+            <label for="correoElectronico">Email</label>
+            <input type="email" id="correoElectronico" class="input-padron" required placeholder="email@domain.com">
+
+            <label for="telefono">Phone </label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XXX) XXX XXXX">
+
+            <label for="mensaje">Message</label>
+            <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+            <fieldset>
+                <legend>How would you like to be contacted?</legend>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email"
+                        id="radio-email"></input>Email</label>
+
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                        id="radio-telefono">Phone</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"
+                        checked>Whatsapp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred contact time</legend>
+                <select>
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Night</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Would you like to receive updates from The Barber?</label>
+
+            <input type="submit" value="Submit Form" class="enviar">
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>08h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>08h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>08h - 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="./images/logo-blanco.png">
+        <p class="copyright">&copy Copyright The Barber 2024</p>
+    </footer>
+</body>
+
+</html>
